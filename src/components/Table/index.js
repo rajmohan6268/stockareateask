@@ -11,7 +11,7 @@ const filterdatabyNamebasedonsearchvalue = (
   } else {
     warehouse = data
       .filter((obj) =>
-        obj.name.toLowerCase().includes(searchValue.toLowerCase())
+        obj.name.toLowerCase().includes(searchValue.toLowerCase().trim())
       )
       .map((obj) => {
         return obj;
